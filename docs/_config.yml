@@ -1,5 +1,16 @@
-remote_theme: pages-themes/slate@v0.2.0
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
 title: data_processing_Ukanazawa
 description: Homepage for data_processing_Ukanazawa
+
+logo: "/assets/images/logo.png"
+color_scheme: dark
+
+# navigation
+aux_links:
+  "View on GitHub":
+    - "//github.com/your-username/your-repo"
+
+# Enable search functionality
+search_enabled: true

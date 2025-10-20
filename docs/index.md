@@ -8,4 +8,4 @@ This site presents our two-photon imaging experiments, data analysis pipeline, a
 - slice registration, cell finding, visualization and quantification (minor)
 - repo for the behavioral programs
 
-[View GitHub Repository](https://qingruiliu.github.io/data_processing_Ukanazawa/)
+[View GitHub Repository](https://github.com/qingruiliu/data_processing_Ukanazawa)
