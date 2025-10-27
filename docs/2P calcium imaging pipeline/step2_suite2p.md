@@ -22,7 +22,7 @@ $ python -m suite2p
 - `Add directory to data_path` and choose the folder containing image sequence
 - Adjust the necessary settings:
 
-![suite2p_setting](../assets/images/step2_fig1.jpg)
+![suite2p_setting](assets/images/step2_fig1.jpg)
 
 - **fs:** imaging frequency (input your actual frequency)
 - **save_mat:** output .mat file
