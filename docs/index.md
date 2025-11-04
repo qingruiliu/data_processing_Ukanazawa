@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Home"
+nav_order: 1
+---
+
 # Data_processing_Ukanazawa
 
 This site presents our two-photon imaging experiments, data analysis pipeline, and representative results.

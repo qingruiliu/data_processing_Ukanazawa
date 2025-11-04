@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Step 1: Read .nd2 file"
+nav_order: 1
+parent: "2P Calcium Imaging Pipeline"
+---
+
 # 1. Read the .nd2 file
 
 ## Using the file [step1_read_nd2.m](https://github.com/qingruiliu/data_processing_Ukanazawa/blob/main/2P_data_processing_MATLAB/step1_read_nd2.m)

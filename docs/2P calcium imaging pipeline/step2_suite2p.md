@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Step 2: Suite2p Processing"
+nav_order: 2
+parent: "2P Calcium Imaging Pipeline"
+---
+
 # 2. Suite2p for registration, ROI detection and spike detection
 
 ## Description
