@@ -5,39 +5,81 @@ nav_order: 1
 parent: "2P Calcium Imaging Pipeline"
 ---
 
-# 1. Read the .nd2 file
+# Step 1: Read the .nd2 file
 
-- Using the file [step1_read_nd2.m](https://github.com/qingruiliu/data_processing_Ukanazawa/blob/main/2P_data_processing_MATLAB/step1_read_nd2.m)
+This step uses the MATLAB script [`step1_read_nd2.m`](https://github.com/qingruiliu/data_processing_Ukanazawa/blob/main/2P_data_processing_MATLAB/step1_read_nd2.m) to process .nd2 files.
 
-### Description
+---
 
-- Directly read the `.nd2` file in MATLAB
-- Automatically save the `.tif` sequence and `.txt` timestamps of all or individual imaging planes
-- Prepare the files for next step (**suite2p** input)
+## Description
 
-### Dependency
+This script performs the following tasks:
 
-- OME Bio-formats Toolbox for MATLAB [(links)](https://www.openmicroscopy.org/bio-formats/downloads/)
-- Download and add the functions to the MATLAB path
+- Directly reads `.nd2` files in MATLAB
+- Automatically saves `.tif` image sequences and `.txt` timestamps for all or individual imaging planes
+- Prepares files for the next step (**suite2p** input)
 
-### How to use
+---
 
-1. load step1_read_nd2.m in MATLAB
-2. select the target **resonant volume 2P** .nd2 file
-3. MATLAB reading the `.nd2` images
-   ![MATLAB_reading](assets/images/step1_fig1.jpg)
-4. When finish reading `.nd2` file, window asking to save the files pop out:
-   ![saving_window](assets/images/step1_fig2.jpg)
+## Dependencies
 
-- `Yes` for all planes
-- `Select specific planes` to pick certain planes
+Before using this script, you need to install:
 
-5. Select saving path
-6. Data output:
-   ![step1_output](assets/images/step1_fig3.jpg)
+- **OME Bio-formats Toolbox for MATLAB** - [Download here](https://www.openmicroscopy.org/bio-formats/downloads/)
+- Download and add the functions to your MATLAB path
 
-### Output
+---
 
-- `dataset_info.txt`: MATLAB log in the command windw
-- `*_timestamps.txt`: timestamp for each frame of the image sequence
-- `*_timeseries.tif`: 8-bit grayscale image sequence for `suite2p` input
+## How to Use
+
+Follow these steps to process your .nd2 files:
+
+### 1. Load the script
+
+Load `step1_read_nd2.m` in MATLAB
+
+### 2. Select input file
+
+Select the target **resonant volume 2P** `.nd2` file
+
+### 3. Reading process
+
+MATLAB will read the `.nd2` images:
+
+![MATLAB reading process](assets/images/step1_fig1.jpg)
+_MATLAB processing the .nd2 file_
+
+### 4. Save options
+
+When finished reading the `.nd2` file, a window will ask how to save the files:
+
+![Saving options window](assets/images/step1_fig2.jpg)
+_Choose your saving preferences_
+
+Available options:
+
+- **Yes**: Save all planes
+- **Select specific planes**: Choose only certain planes to save
+
+### 5. Select output location
+
+Choose where to save the processed files
+
+### 6. Review output
+
+Check the generated files:
+
+![Step 1 output files](assets/images/step1_fig3.jpg)
+_Generated output files_
+
+---
+
+## Output Files
+
+The script generates the following files:
+
+| File Type          | Description                                          |
+| ------------------ | ---------------------------------------------------- |
+| `dataset_info.txt` | MATLAB log from the command window                   |
+| `*_timestamps.txt` | Timestamp for each frame of the image sequence       |
+| `*_timeseries.tif` | 8-bit grayscale image sequence for **suite2p** input |
