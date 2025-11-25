@@ -9,10 +9,14 @@ parent: "2P Calcium Imaging Pipeline"
 
 ## Description
 
+---
+
 ## Dependency
 
 - python virtual environment (managed by anaconda) with **suite2p** installed
 - **cellpose** installed in the same environment is recommended (for better cell segmentation)
+
+---
 
 ## How to use
 
@@ -35,9 +39,17 @@ $ python -m suite2p
 - **save_mat:** output .mat file
 - **denoise:** denoise the image using PCA
 - **anatomical_only:** 1 is recommended
-- **pretrained_model:** `cpsam` (if cellpose installed), `cyto2`
+- **pretrained_model:** `cpsam` (if cellpose installed), `cyto3`
 
 ### output
+
+- suite2p log output:
+  ![log_output](assets/images/step2_fig2.png)
+
+- GUI output:
+  ![gui_output](assets/images/step2_fig3.png) - including the detected ROIs which are cells (left panel) and not cells (right panel) recognized automatically - Manually adjusting the ROIs is necessary -
+- File output:
+  ![file_output](assets/images/step2_fig4.png) - separate `.npy` files for python program - `Fall.mat` for next MATLAB data processing
 
 ## More info
 
