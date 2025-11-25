@@ -10,7 +10,7 @@ color_scheme: light
 # navigation
 aux_links:
   "View on GitHub":
-    - "//github.com/your-username/your-repo"
+    - "//github.com/qingruiliu/data_processing_Ukanazawa"
 
 # Enable search functionality
 search_enabled: true
