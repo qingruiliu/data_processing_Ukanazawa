@@ -31,10 +31,10 @@ This step involves reading a static 3D Galvano scan (.nd2 file), visualizing it 
 - **Segment**:
   - A dialog will ask you to examine the volume and determine the starting Z-plane for deep layer cells.
   - Click **OK** when ready.
-  - [fig1](assets/images/step4_fig1.png)
+  - ![fig1](assets/images/step4_fig1.png)
   - Enter the Z-plane index (integer) where the deep layers begin. The program will keep all planes from this index to the bottom.
     - e.g. This volume can be segmented from Z = 100
-    - [fig2](assets/images/step4_fig2.png)
+    - ![fig2](assets/images/step4_fig2.png)
 - **Save**:
   - The program will ask if you want to save the segmented volume.
   - Select **Yes** and choose a filename (e.g., `deep_layer_volume.tif`).
@@ -49,7 +49,7 @@ $ cellpose --Zstack           # volume segmentation
 ```
 
 - import the `deep_layer_volume.tif` in Cellpose
-- [fig3](assets/images/step4_fig3.png)
+- ![fig3](assets/images/step4_fig3.png)
 - click `runCPSAM`
 
 ### output
