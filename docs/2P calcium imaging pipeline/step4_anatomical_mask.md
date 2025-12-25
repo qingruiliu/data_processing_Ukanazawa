@@ -55,7 +55,7 @@ $ cellpose --Zstack           # volume segmentation
 #### manually curling of the 3D ROIs in cellpose GUI
 
 - demo movie for drawing 3D ROI
-  ![3DROI](assets/images/3DROI.mp4)
+  ![3DROI](assets/images/3DROI.gif)
 
 - save the segmented images and ROIs as separate files
   ![fig4](assets/images/step4_fig4.png)
@@ -65,7 +65,7 @@ $ cellpose --Zstack           # volume segmentation
 - using the MATLAB script [`step4_cellPoseSliceAnd3DROI.m`](https://github.com/qingruiliu/data_processing_Ukanazawa/blob/main/2P_data_processing_MATLAB/step4_cellPoseSliceAnd3DROI.m)
 
 - orthogonal view of the 3D ROIs after manual curation
-  ![ortho_view](assets/images/ortho_view.mp4)
+  ![ortho_view](assets/images/ortho_view.gif)
 
 - two tables and the sliced 3D ROIs are saved to the data directory
   ![fig5](assets/images/step4_fig5.jpg)
