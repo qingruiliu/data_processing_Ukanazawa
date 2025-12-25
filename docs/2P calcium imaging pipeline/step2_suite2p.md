@@ -47,9 +47,11 @@ $ python -m suite2p
   ![log_output](assets/images/step2_fig2.png)
 
 - GUI output:
-  ![gui_output](assets/images/step2_fig3.png) - including the detected ROIs which are cells (left panel) and not cells (right panel) recognized automatically - Manually adjusting the ROIs is necessary -
+  ![gui_output](assets/images/step2_fig3.png) - including the detected ROIs which are cells (left panel) and not cells (right panel) recognized automatically （Manually adjusting the ROIs is necessary）
 - File output:
-  ![file_output](assets/images/step2_fig4.png) - separate `.npy` files for python program - `Fall.mat` for next MATLAB data processing
+  ![file_output](assets/images/step2_fig4.png)
+  - separate `.npy` files for python program
+  - `Fall.mat` for the data processing using MATLAB
 
 ## More info
 

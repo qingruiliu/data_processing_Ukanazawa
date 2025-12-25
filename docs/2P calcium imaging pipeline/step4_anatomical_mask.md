@@ -41,7 +41,7 @@ This step involves reading a static 3D Galvano scan (.nd2 file), visualizing it 
 
 ---
 
-- open Cellpose in your according virtual environment
+#### open Cellpose in your according virtual environment
 
 ```
 $ conda activate cellpose-env # your environment name
@@ -52,17 +52,20 @@ $ cellpose --Zstack           # volume segmentation
 - ![fig3](assets/images/step4_fig3.png)
 - click `runCPSAM`
 
-### output
+#### manually curling of the 3D ROIs in cellpose GUI
 
-- **MATLAB Workspace**:
+- demo movie for drawing 3D ROI
+  ![3DROI](assets/images/3DROI.mp4)
 
-  - `anatomical_volume`: The full 3D volume matrix.
-  - `deep_layer_volume`: The segmented 3D volume matrix.
-  - `deep_layer_start_z`: The starting Z-plane index used for segmentation.
+- save the segmented images and ROIs as separate files
+  ![fig4](assets/images/step4_fig4.png)
 
-- **File output**:
-  - A multi-page **.tif** file containing the segmented deep layer volume. This file preserves the original data values and is suitable for mask generation.
+#### generate functional mask
 
-## More info
+- using the MATLAB script [`step4_cellPoseSliceAnd3DROI.m`](https://github.com/qingruiliu/data_processing_Ukanazawa/blob/main/2P_data_processing_MATLAB/step4_cellPoseSliceAnd3DROI.m)
 
-- The output TIFF file is compatible with **Cellpose** for 3D segmentation.
+- orthogonal view of the 3D ROIs after manual curation
+  ![ortho_view](assets/images/ortho_view.mp4)
+
+- two tables and the sliced 3D ROIs are saved to the data directory
+  ![fig5](assets/images/step4_fig5.jpg)
