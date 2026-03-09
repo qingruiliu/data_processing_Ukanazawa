@@ -38,7 +38,8 @@ $ python -m suite2p
 - **fs:** imaging frequency (input your actual frequency)
 - **save_mat:** output .mat file
 - **denoise:** denoise the image using PCA
-- **anatomical_only:** 1 is recommended
+- **anatomical_only:** 1 is recommended (if few ROIs are detected, try 2)
+  - for more details, check the https://suite2p.readthedocs.io/en/latest/settings.html
 - **pretrained_model:** `cpsam` (if cellpose installed), `cyto3`
 
 ### output
